@@ -7,7 +7,7 @@
 // @downloadURL	https://raw.githubusercontent.com/yaemania/releases/master/VaughnLive(tv).user.js
 // @include     *://vaughnlive.tv*
 // @exclude     *://vaughnlive.tv/*chat*
-// @version     1.4
+// @version     1.5
 // @dateLast	2017.04.08
 // @grant       none
 // ==/UserScript==
