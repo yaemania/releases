@@ -1,4 +1,4 @@
-// ==UserScript==
+﻿// ==UserScript==
 // @name        Animeflv.net - Fix
 // @namespace   Animeflv.net, Remove ads,social,and any shit i dont like :D
 // @description remove ads social, etc, just pure player style.
