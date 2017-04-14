@@ -1,7 +1,7 @@
-﻿// ==UserScript==
+// ==UserScript==
 // @name        Animeflv.net - Fix
 // @namespace   Animeflv.net, Remove ads,social,and any shit i dont like :D
-// @description remove ads social, etc, just pure player style.
+// @description remove ads social, etc, just pure player style. yaelmania script
 // @run-at      document-end
 // @require     https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js
 // @updateURL   https://raw.githubusercontent.com/yaemania/releases/master/Animeflv(net).meta.js
