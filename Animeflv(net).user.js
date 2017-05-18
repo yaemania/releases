@@ -27,14 +27,14 @@ function GoNext() {
   var Cheker2 = verifica2.replace(/.+\/ver\.+/gi,'ver');
   var Cheker3 = verifica1.replace(/.+\/anime\/.+/gi,'anime');
   if(Cheker1 == Cheker2 && Cheker3 !== 'anime'){
-    $av('[class^="Dvr"]').each(function() {
-      $av( this ).remove();
+    $av('.fb-comments').each(function() {
+      $av( this ).parent().remove();
     });
     $av('.Button.Sm.fa-download').each(function() {
       var linker = $av(this).attr('href').replace(/.+s\=/g,'');
       $av(this).attr('href',unescape(linker));
     });
-    $av('.Sect.Comments,[id*="ScriptRoot"],.fb-comments').each(function() {
+    $av('.Sect.Comments,[id*="ScriptRoot"]').each(function() {
       $av( this ).parent().parent().remove();
     });
   }
