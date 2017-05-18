@@ -7,8 +7,8 @@
 // @updateURL   https://raw.githubusercontent.com/yaemania/releases/master/Animeflv(net).meta.js
 // @downloadURL https://raw.githubusercontent.com/yaemania/releases/master/Animeflv(net).user.js
 // @include     http*://animeflv.net/*
-// @version     1.4
-// @dateLast    2017.04.13
+// @version     1.5
+// @dateLast    2017.05.17
 // @grant       unsafeWindow
 // @grant       GM_addStyle
 // ==/UserScript==
