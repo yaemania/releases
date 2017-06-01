@@ -7,8 +7,8 @@
 // @updateURL   https://raw.githubusercontent.com/yaemania/releases/master/Animeflv(net).meta.js
 // @downloadURL https://raw.githubusercontent.com/yaemania/releases/master/Animeflv(net).user.js
 // @include     http*://animeflv.net/*
-// @version     1.5
-// @dateLast    2017.05.17
+// @version     1.6
+// @dateLast    2017.05.31
 // @grant       unsafeWindow
 // @grant       GM_addStyle
 // ==/UserScript==
@@ -27,7 +27,7 @@ function GoNext() {
   var Cheker2 = verifica2.replace(/.+\/ver\.+/gi,'ver');
   var Cheker3 = verifica1.replace(/.+\/anime\/.+/gi,'anime');
   if(Cheker1 == Cheker2 && Cheker3 !== 'anime'){
-    $av('.fb-comments').each(function() {
+    $av('.fb-comments,#taboola-right-rail-thumbnails').each(function() {
       $av( this ).parent().remove();
     });
     $av('.Button.Sm.fa-download').each(function() {
@@ -39,7 +39,7 @@ function GoNext() {
     });
   }
 
-  $av('ul.ListPostOpts,.Sect.Comments,#footer, .ads-always-down, .publi_head, .ads_der, #b-close-ads, #ads-dw, [style*="2147483647"],#videoLoading, .jw-overlays.jw-reset, .jw-captions.jw-captions-enabled.jw-reset,.ultimos_epis .not [rel="nofollow"]').each(function() {
+  $av('iframe[src*="animeflv.net/aflv.php"],iframe[src*="animeflv.net/bloque"],.Dvr300,ul.ListPostOpts,.Sect.Comments,#footer, .ads-always-down, .publi_head, .ads_der, #b-close-ads, #ads-dw, [style*="2147483647"],#videoLoading, .jw-overlays.jw-reset, .jw-captions.jw-captions-enabled.jw-reset,.ultimos_epis .not [rel="nofollow"]').each(function() {
       $av( this ).remove();
   });
   $av('body').each(function() {
