@@ -7,8 +7,8 @@
 // @updateURL   https://raw.githubusercontent.com/yaemania/releases/master/Animeflv(net).meta.js
 // @downloadURL https://raw.githubusercontent.com/yaemania/releases/master/Animeflv(net).user.js
 // @include     http*://animeflv.net/*
-// @version     1.6
-// @dateLast    2017.06.10
+// @version     1.7
+// @dateLast    2017.06.18
 // @grant       unsafeWindow
 // @grant       GM_addStyle
 // ==/UserScript==
@@ -51,15 +51,15 @@ function selecx (){
   var Hyperion = $av('ul[role="tablist"] li[title="Hyperion"]').attr('data-id');
   var Okru = $av('ul[role="tablist"] li[title="Okru"]').attr('data-id');
   var MP4Upload = $av('ul[role="tablist"] li[title="MP4Upload"]').attr('data-id');
-  if(Hyperion.length > -1){
+  if(typeof Hyperion != 'undefined'){
     $av('ul[role="tablist"] li[title="Hyperion"]').trigger('click');
     return false;
   }
-  if(MP4Upload.length > -1){
+  if(typeof MP4Upload != 'undefined'){
     $av('ul[role="tablist"] li[title="MP4Upload"]').trigger('click');
     return false;
   }
-  if(Okru.length > -1){
+  if(typeof Okru != 'undefined'){
     $av('ul[role="tablist"] li[title="Okru"]').trigger('click');
     return false;
   }
