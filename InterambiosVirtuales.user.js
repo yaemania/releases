@@ -32,7 +32,6 @@
 var $iv = jQuery.noConflict();
    
 function fuckredirect(){
-$iv(function() {
 	$iv( '.users-online, #chativ' ).each(function() {
 		$iv(this).parent().remove();
 	});
@@ -44,4 +43,4 @@ $iv(function() {
   		$iv( this ).attr('href',string);
 	});
 }
-setTimeout(fuckredirect, 500)
+setTimeout(fuckredirect, 2500)
