@@ -22,7 +22,11 @@ for (var i = 0; i < runmehead.length; i++) {
 
 var $hf = jQuery.noConflict();
 
-
+var stringxy = top.location.href;
+var filtertering = stringxy.replace(/.+\/ext\/.+/g,'marco');
+if(filtertering == 'marco'){
+    top.location.href = $hf( '#external-link' ).attr('href');
+}
 
 $hf( '.embed-selector' ).each(function() {
 $hf( this ).attr("onclick","")
@@ -95,11 +99,5 @@ function clennerlink(){
     $hf(this).attr('href',decodedString);
   });
   $hf('body').append(unescape('%3Cstyle%3Ea%3Avisited%2C a%3Avisited img %7Bcolor%3A%239A5858%21important%3Bborder%3A 3px solid %21important%3B%7D%3C%2Fstyle%3E'));
-  var stringxy = top.location.href;
-  var filtertering = stringxy.replace(/.+\/ext\/.+/g,'marco');
-  if(filtertering.length == 'marco'){
-  	top.location.href = $sl( '#external-link' ).attr('href');
-  	return false;
-	}
 }
 setTimeout(clennerlink, 500);
