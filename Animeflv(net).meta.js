@@ -1,13 +1,14 @@
 // ==UserScript==
-// @name        VaughnLive.tv
-// @namespace   Clean VaughnLive to see only player, no more crap else, also add-on from me web page http://yaelmania.co.nf
+// @name        Animeflv.net - Fix
+// @namespace   Animeflv.net, Remove ads,social,and any shit i dont like :D
+// @description remove ads social, etc, just pure player style. yaelmania script
 // @run-at      document-end
-// @require     http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js
-// @updateURL 	https://raw.githubusercontent.com/yaemania/releases/master/VaughnLive(tv).meta.js
-// @downloadURL	https://raw.githubusercontent.com/yaemania/releases/master/VaughnLive(tv).user.js
-// @include     *://vaughn*
-// @exclude     *://vaughn*/*chat*
-// @version     2.4.3
-// @dateLast  	2020.05.23
-// @grant       none
+// @require     https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js
+// @updateURL   https://raw.githubusercontent.com/yaemania/releases/master/Animeflv(net).meta.js
+// @downloadURL https://raw.githubusercontent.com/yaemania/releases/master/Animeflv(net).user.js
+// @include     http*://animeflv.net/*
+// @version     1.5
+// @dateLast    2017.05.17
+// @grant       unsafeWindow
+// @grant       GM_addStyle
 // ==/UserScript==
