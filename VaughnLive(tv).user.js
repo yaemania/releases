@@ -7,8 +7,8 @@
 // @downloadURL	https://raw.githubusercontent.com/yaemania/releases/master/VaughnLive(tv).user.js
 // @include     *://vaughn*
 // @exclude     *://vaughn*/*chat*
-// @version     2.4.3
-// @dateLast  	2020.05.23
+// @version     2.4.4
+// @dateLast  	2021.04.02
 // @grant       none
 // ==/UserScript==
 
@@ -38,10 +38,10 @@ function geto(){
   $vg('#upperVaughnLeft.vaughnLeft' ).each(function() {
     $vg( this ).attr('class','vaughnCenter');
   });
-  $vg('.abvsHeaderWrapper, .vaughnLeft, [style*="339933"],.MvnHlsPlayerOverlayFixed, .MvnAbvsLowerThirdWrapper, #loading, #upperVaughnRight, .abvsDynamic, [class^="height"], .header,[id^="modal"], .vaughnMid, .vaughnRight, .clear, .channelAboutWrapper, .videoStatsWrapper, .videoStatus, .footerWrapper, [id*="chat"], #dashboardWindow, #mvn, .topBarV2headerSpacer, .header_spacer,[style*="-5000"], .videoHeaderImage, noscript, .abvsContainer, .MvnAbvsLowerThirdWrapper, .MvnHlsPlayerWatermarkVL, meta, a[href*="blog.vaughnsoft.com"], [id^="chattersList"], .abvsContainer, script, #MvnHlsPlayer_wrapper .MvnHlsPlayer_options_box, [class^="header_alert_wrapper"]' ).each(function() {
+  $vg('.header_alert_v2_container, .abvsHeaderWrapper, .vaughnLeft, [style*="339933"],.MvnHlsPlayerOverlayFixed, .MvnAbvsLowerThirdWrapper, #loading, #upperVaughnRight, .abvsDynamic, [class^="height"], .header,[id^="modal"], .vaughnMid, .vaughnRight, .clear, .channelAboutWrapper, .videoStatsWrapper, .videoStatus, .footerWrapper, [id*="chat"], #dashboardWindow, #mvn, .topBarV2headerSpacer, .header_spacer,[style*="-5000"], .videoHeaderImage, noscript, .abvsContainer, .MvnAbvsLowerThirdWrapper, .MvnHlsPlayerWatermarkVL, meta, a[href*="blog.vaughnsoft.com"], [id^="chattersList"], .abvsContainer, script, #MvnHlsPlayer_wrapper .MvnHlsPlayer_options_box, [class^="header_alert_wrapper"]' ).each(function() {
     $vg( this ).remove();
   });
-  $vg('a[href*="community"]').each(function() {
+  $vg('a[href*="community"], ins[class="adsbygoogle"]').each(function() {
     $vg( this ).parent().remove();
   });
   $vg('body').find('style').each(function() {
