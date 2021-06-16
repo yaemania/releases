@@ -7,8 +7,8 @@
 // @downloadURL	https://raw.githubusercontent.com/yaemania/releases/master/VaughnLive(tv).user.js
 // @include     *://vaughn*
 // @exclude     *://vaughn*/*chat*
-// @version     2.4.4
-// @dateLast  	2021.04.02
+// @version     2.4.5
+// @dateLast  	2021.06.16
 // @grant       none
 // ==/UserScript==
 
@@ -35,13 +35,16 @@ function geto(){
     $vg('body').html('<a id="dumyclik" hres="'+stuped+'" target="_blank">Click aqui para ver</a>');
     window.open(stuped);
   }
+  $vg('head' ).each(function() {
+    $vg( this ).append(unescape('%3Cstyle%3E.header_alert_vaughnmas_wrapper.mvn_roundupheader_alert_vaughnmas_wrapper.mvn_roundup%2C%20.header_alert_vaughnmas_wrapper_inner%2C%20.header_alert_vaughnmas_wrapper.mvn_roundup%2C%20%5Bclass*%3D%22app_promo%22%5D%2C%20%5Bclass*%3D%22MvnAbvsLowerThirdWrapper%22%5D%7Bdisplay%3Anone!important%3B%7D%3C%2Fstyle%3E'));
+  });
   $vg('#upperVaughnLeft.vaughnLeft' ).each(function() {
     $vg( this ).attr('class','vaughnCenter');
   });
-  $vg('.header_alert_v2_container, .abvsHeaderWrapper, .vaughnLeft, [style*="339933"],.MvnHlsPlayerOverlayFixed, .MvnAbvsLowerThirdWrapper, #loading, #upperVaughnRight, .abvsDynamic, [class^="height"], .header,[id^="modal"], .vaughnMid, .vaughnRight, .clear, .channelAboutWrapper, .videoStatsWrapper, .videoStatus, .footerWrapper, [id*="chat"], #dashboardWindow, #mvn, .topBarV2headerSpacer, .header_spacer,[style*="-5000"], .videoHeaderImage, noscript, .abvsContainer, .MvnAbvsLowerThirdWrapper, .MvnHlsPlayerWatermarkVL, meta, a[href*="blog.vaughnsoft.com"], [id^="chattersList"], .abvsContainer, script, #MvnHlsPlayer_wrapper .MvnHlsPlayer_options_box, [class^="header_alert_wrapper"]' ).each(function() {
+  $vg(' [class*="app_promo"], .header_alert_v2_container, .abvsHeaderWrapper, .vaughnLeft, [style*="339933"],.MvnHlsPlayerOverlayFixed, .MvnAbvsLowerThirdWrapper, #loading, #upperVaughnRight, .abvsDynamic, [class^="height"], .header,[id^="modal"], .vaughnMid, .vaughnRight, .clear, .channelAboutWrapper, .videoStatsWrapper, .videoStatus, .footerWrapper, [id*="chat"], #dashboardWindow, #mvn, .topBarV2headerSpacer, .header_spacer,[style*="-5000"], .videoHeaderImage, noscript, .abvsContainer, .MvnAbvsLowerThirdWrapper, .MvnHlsPlayerWatermarkVL, meta, a[href*="blog.vaughnsoft.com"], [id^="chattersList"], .abvsContainer, script, #MvnHlsPlayer_wrapper .MvnHlsPlayer_options_box, [class^="header_alert_wrapper"]' ).each(function() {
     $vg( this ).remove();
   });
-  $vg('a[href*="community"], ins[class="adsbygoogle"]').each(function() {
+  $vg('a[href*="community"], ins[class="adsbygoogle"], #aniBox').each(function() {
     $vg( this ).parent().remove();
   });
   $vg('body').find('style').each(function() {
@@ -61,3 +64,4 @@ function geto(){
   });
 }
 setTimeout(geto, 2000);
+
