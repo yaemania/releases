@@ -7,8 +7,8 @@
 // @downloadURL	https://raw.githubusercontent.com/yaemania/releases/master/VaughnLive(tv).user.js
 // @include     *://vaughn*
 // @exclude     *://vaughn*/*chat*
-// @version     2.4.5
-// @dateLast  	2021.06.16
+// @version     2.5.1
+// @dateLast  	2021.07.13
 // @grant       none
 // ==/UserScript==
 
@@ -35,6 +35,20 @@ function geto(){
     $vg('body').html('<a id="dumyclik" hres="'+stuped+'" target="_blank">Click aqui para ver</a>');
     window.open(stuped);
   }
+  $vg('body' ).each(function() {
+    var adresss = window.location.href;
+    var hrefer = $vg( this ).html();
+    if(hrefer.indexOf('Traffic from non secure websites (non HTTPS) have been blocked') > -1){
+      adresss.replace(/https\:/gi,'http:');
+      window.location.href = adresss;
+      window.location.href;
+      return false;
+    }
+  });
+  setTimeout(getox, 500);
+}
+
+function getox(){
   $vg('head' ).each(function() {
     $vg( this ).append(unescape('%3Cstyle%3E.header_alert_vaughnmas_wrapper.mvn_roundupheader_alert_vaughnmas_wrapper.mvn_roundup%2C%20.header_alert_vaughnmas_wrapper_inner%2C%20.header_alert_vaughnmas_wrapper.mvn_roundup%2C%20%5Bclass*%3D%22app_promo%22%5D%2C%20%5Bclass*%3D%22MvnAbvsLowerThirdWrapper%22%5D%7Bdisplay%3Anone!important%3B%7D%3C%2Fstyle%3E'));
   });
@@ -64,4 +78,3 @@ function geto(){
   });
 }
 setTimeout(geto, 2000);
-
