@@ -1,4 +1,3 @@
-
 // ==UserScript==
 // @name        VaughnLive.tv
 // @namespace   Clean VaughnLive to see only player, no more crap else, also add-on from me web page http://yaelmania.c1.biz
@@ -8,8 +7,8 @@
 // @downloadURL	https://raw.githubusercontent.com/yaemania/releases/master/VaughnLive(tv).user.js
 // @include     *://vaughn*
 // @exclude     *://vaughn*/*chat*
-// @version     2.5.2
-// @dateLast  	2022.02.18
+// @version     2.6.0
+// @dateLast  	2023.08.15
 // @grant       none
 // ==/UserScript==
 
@@ -57,7 +56,7 @@ function getox(){
   $vg('#upperVaughnLeft.vaughnLeft' ).each(function() {
     $vg( this ).attr('class','vaughnCenter');
   });
-  $vg(' [class*="app_promo"], .header_alert_v2_container, .abvsHeaderWrapper, .vaughnLeft, [style*="339933"],.MvnHlsPlayerOverlayFixed, .MvnAbvsLowerThirdWrapper, #loading, #upperVaughnRight, .abvsDynamic, [class^="height"], .header,[id^="modal"], .vaughnMid, .vaughnRight, .clear, .channelAboutWrapper, .videoStatsWrapper, .videoStatus, .footerWrapper, [id*="chat"], #dashboardWindow, #mvn, .topBarV2headerSpacer, .header_spacer,[style*="-5000"], .videoHeaderImage, noscript, .abvsContainer, .MvnAbvsLowerThirdWrapper, .MvnHlsPlayerWatermarkVL, meta, a[href*="blog.vaughnsoft.com"], [id^="chattersList"], .abvsContainer, script, #MvnHlsPlayer_wrapper .MvnHlsPlayer_options_box, [class^="header_alert_wrapper"]' ).each(function() {
+  $vg('#vs_v9_app_menu, #vs_content_menu, .wrapper_header, .wrapper_header2, .vs_stream_nav_box, .vs_v9_stream_content_abvs, .vs_v9_stream_content_info, .vs_v9_stream_content_spacer, .vs_v9_footer, .vs_v9_stream_content_spacer, [style*="data:x"], .vs_v9_LTabvsLowerThirdWrapper, [class*="modal_notice"], .vs_v9_modal_notice, [class*="app_promo"], .header_alert_v2_container, .abvsHeaderWrapper, .vaughnLeft, [style*="339933"],.MvnHlsPlayerOverlayFixed, .MvnAbvsLowerThirdWrapper, #loading, #upperVaughnRight, .abvsDynamic, [class^="height"], .header,[id^="modal"], .vaughnMid, .vaughnRight, .clear, .channelAboutWrapper, .videoStatsWrapper, .videoStatus, .footerWrapper, [id*="chat"], #dashboardWindow, #mvn, .topBarV2headerSpacer, .header_spacer,[style*="-5000"], .videoHeaderImage, noscript, .abvsContainer, .MvnAbvsLowerThirdWrapper, .MvnHlsPlayerWatermarkVL, meta, a[href*="blog.vaughnsoft.com"], [id^="chattersList"], .abvsContainer, script, #MvnHlsPlayer_wrapper .MvnHlsPlayer_options_box, [class^="header_alert_wrapper"]' ).each(function() {
     $vg( this ).remove();
   });
   $vg('a[href*="community"], ins[class="adsbygoogle"], #aniBox').each(function() {
@@ -72,7 +71,7 @@ function getox(){
   $vg('.vidPlayer').each(function() {
     $vg(this).attr('style','top: 0px;');
   });
-  $vg('body, .VSPlayerTapOverlay,#wrapper,#videoPlayer,#vidPlayer,#MvnHlsPlayer_wrapper,#MvnHlsPlayerBox,#MvnHlsPlayer,#MvnHlsPlayerLive, #MvnHlsPlayerBar').each(function() {
+  $vg('body, #the_content, .VSPlayerTapOverlay,#wrapper,#videoPlayer,#vidPlayer,#MvnHlsPlayer_wrapper,#MvnHlsPlayerBox,#MvnHlsPlayer,#MvnHlsPlayerLive, #MvnHlsPlayerBar').each(function() {
     var a = 'width:' + wh + 'px;';
     var b = 'height:' + ht + 'px;';
     $vg(this).attr('style',a + b);
@@ -80,3 +79,4 @@ function getox(){
   });
 }
 setTimeout(geto, 1000);
+
