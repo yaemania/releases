@@ -5,10 +5,12 @@
 // @require     http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js
 // @updateURL 	https://raw.githubusercontent.com/yaemania/releases/master/VaughnLive(tv).meta.js
 // @downloadURL	https://raw.githubusercontent.com/yaemania/releases/master/VaughnLive(tv).user.js
+// @icon        https://github.com/yaelmania/releases/raw/refs/heads/master/favicon03.ico
 // @include     *://vaughn*
+// @include     *://vaughn.*
 // @exclude     *://vaughn*/*chat*
-// @version     2.6.0
-// @dateLast  	2023.08.15
+// @version     2.7.8
+// @dateLast  	2025.08.14
 // @grant       none
 // ==/UserScript==
 
@@ -25,6 +27,12 @@ function ficus(){
     var b = 'height:' + ht + 'px;';
     var c = 'top:0px;';
     $vg(this).attr('style',a + b + c);
+  });
+  setTimeout(fixemder, 1000);
+}
+function fixemder(){
+  $vg('body div.wrapper_header .the_header, body div.wrapper_header .vs_v9_header_right' ).each(function() {
+    $vg( this ).remove();
   });
 }
 function geto(){
@@ -56,7 +64,7 @@ function getox(){
   $vg('#upperVaughnLeft.vaughnLeft' ).each(function() {
     $vg( this ).attr('class','vaughnCenter');
   });
-  $vg('#vs_v9_app_menu, #vs_content_menu, .wrapper_header, .wrapper_header2, .vs_stream_nav_box, .vs_v9_stream_content_abvs, .vs_v9_stream_content_info, .vs_v9_stream_content_spacer, .vs_v9_footer, .vs_v9_stream_content_spacer, [style*="data:x"], .vs_v9_LTabvsLowerThirdWrapper, [class*="modal_notice"], .vs_v9_modal_notice, [class*="app_promo"], .header_alert_v2_container, .abvsHeaderWrapper, .vaughnLeft, [style*="339933"],.MvnHlsPlayerOverlayFixed, .MvnAbvsLowerThirdWrapper, #loading, #upperVaughnRight, .abvsDynamic, [class^="height"], .header,[id^="modal"], .vaughnMid, .vaughnRight, .clear, .channelAboutWrapper, .videoStatsWrapper, .videoStatus, .footerWrapper, [id*="chat"], #dashboardWindow, #mvn, .topBarV2headerSpacer, .header_spacer,[style*="-5000"], .videoHeaderImage, noscript, .abvsContainer, .MvnAbvsLowerThirdWrapper, .MvnHlsPlayerWatermarkVL, meta, a[href*="blog.vaughnsoft.com"], [id^="chattersList"], .abvsContainer, script, #MvnHlsPlayer_wrapper .MvnHlsPlayer_options_box, [class^="header_alert_wrapper"]' ).each(function() {
+  $vg('.the_header, .vs_v9_header_right, .wrapper_header, .vs_v9_modal_subscribe_background, #vs_v9_modal_subscribe, #vs_v9_modal_version3, iframe, p, #snack_dex1, [class*="simplebar-track"], [class*="vs_chatv9_gifs"], [class*="vs_v9_header_notice"], #vs_v9_app_menu, #vs_content_menu, .wrapper_header, .wrapper_header2, .vs_stream_nav_box, .vs_v9_stream_content_abvs, .vs_v9_stream_content_info, .vs_v9_stream_content_spacer, .vs_v9_footer, .vs_v9_stream_content_spacer, [style*="data:x"], .vs_v9_LTabvsLowerThirdWrapper, [class*="modal_notice"], .vs_v9_modal_notice, [class*="app_promo"], .header_alert_v2_container, .abvsHeaderWrapper, .vaughnLeft, [style*="339933"],.MvnHlsPlayerOverlayFixed, .MvnAbvsLowerThirdWrapper, #loading, #upperVaughnRight, .abvsDynamic, [class^="height"], .header,[id^="modal"], .vaughnMid, .vaughnRight, .clear, .channelAboutWrapper, .videoStatsWrapper, .videoStatus, .footerWrapper, [id*="chat"], #dashboardWindow, #mvn, .topBarV2headerSpacer, .header_spacer,[style*="-5000"], .videoHeaderImage, noscript, .abvsContainer, .MvnAbvsLowerThirdWrapper, .MvnHlsPlayerWatermarkVL, meta, a[href*="blog.vaughnsoft.com"], [id^="chattersList"], .abvsContainer, script, #MvnHlsPlayer_wrapper .MvnHlsPlayer_options_box, [class^="header_alert_wrapper"]' ).each(function() {
     $vg( this ).remove();
   });
   $vg('a[href*="community"], ins[class="adsbygoogle"], #aniBox').each(function() {
@@ -79,4 +87,3 @@ function getox(){
   });
 }
 setTimeout(geto, 1000);
-
