@@ -5,9 +5,11 @@
 // @require     http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js
 // @updateURL 	https://raw.githubusercontent.com/yaemania/releases/master/VaughnLive(tv).meta.js
 // @downloadURL	https://raw.githubusercontent.com/yaemania/releases/master/VaughnLive(tv).user.js
+// @icon        https://github.com/yaelmania/releases/raw/refs/heads/master/favicon03.ico
 // @include     *://vaughn*
+// @include     *://vaughn.*
 // @exclude     *://vaughn*/*chat*
-// @version     2.6.0
-// @dateLast  	2023.08.15
+// @version     2.7.8
+// @dateLast  	2025.08.14
 // @grant       none
 // ==/UserScript==
