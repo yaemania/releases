@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        VaughnLive.tv
-// @namespace   Clean VaughnLive to see only player, no more crap else, also add-on from me web page http://yaelmania.c1.biz
+// @namespace   Clean VaughnLive to see only player, no more crap else, also add-on from me web page http://yaelmania.com
 // @run-at      document-end
 // @require     http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js
 // @updateURL 	https://raw.githubusercontent.com/yaemania/releases/master/VaughnLive(tv).meta.js
@@ -9,7 +9,7 @@
 // @include     *://vaughn*
 // @include     *://vaughn.*
 // @exclude     *://vaughn*/*chat*
-// @version     2.7.8
+// @version     2.9.8
 // @dateLast  	2025.08.14
 // @grant       none
 // ==/UserScript==
@@ -58,7 +58,7 @@ function geto(){
 
 function getox(){
   $vg('head' ).each(function() {
-    $vg( this ).append(unescape('%3Cstyle%3E.header_alert_vaughnmas_wrapper.mvn_roundupheader_alert_vaughnmas_wrapper.mvn_roundup%2C%20.header_alert_vaughnmas_wrapper_inner%2C%20.header_alert_vaughnmas_wrapper.mvn_roundup%2C%20%5Bclass*%3D%22app_promo%22%5D%2C%20%5Bclass*%3D%22MvnAbvsLowerThirdWrapper%22%5D%7Bdisplay%3Anone!important%3B%7D%3C%2Fstyle%3E'));
+    $vg( this ).append(unescape('%3Cstyle%3E.header_alert_vaughnmas_wrapper.mvn_roundupheader_alert_vaughnmas_wrapper.mvn_roundup%2C%20.header_alert_vaughnmas_wrapper_inner%2C%20.header_alert_vaughnmas_wrapper.mvn_roundup%2C%20%5Bclass*%3D%22app_promo%22%5D%2C%20%5Bclass*%3D%22MvnAbvsLowerThirdWrapper%22%5D%7Bdisplay%3Anone!important%3B%7Dbody%20%7Balign-self%3A%20center!important%3B%7D%3C%2Fstyle%3E'));
     $vg( this ).append(unescape('%3Cstyle%3E.vs_v9_MvnAbvsLowerThird%7Bposition%3A%20absolute!important%3Btop%3A%20-999px!important%3Bleft%3A%20-999px!important%3Bmax-width%3A%200.1em!important%3Bmax-height%3A%200.1em!important%3Bwidth%3A%200.1em!important%3Bheight%3A%200.1em!important%3Bcolor%3A%20transparent!important%3Bfont-size%3A%200.01em!important%3Bfont-size-adjust%3A%200.01!important%3Bbackground%3A%20none!important%3Bbackground-color%3A%20transparent!important%3Bbackground-image%3A%20none!important%3Bbackground-repeat%3A%20no-repeat!important%3Bz-index%3A-9999999!important%3B%7D%3C%2Fstyle%3E'));
   });
   $vg('#upperVaughnLeft.vaughnLeft' ).each(function() {
